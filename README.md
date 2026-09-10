@@ -37,9 +37,9 @@ of `css/style.css`. The foreground ramp (`--fg`, `--fg-muted`, `--fg-faint`) is 
 with its contrast ratio against `--bg`; keep any replacement at 4.5:1 or better.
 
 **Adding a contact address.** There is a commented-out block in the `#contact` section of
-`index.html`. Use a dedicated forwarding alias rather than a personal inbox — a Gmail
-plus-alias (`name+tag@gmail.com`) is not protection, since spammers strip the suffix to
-recover the real address.
+`index.html`. Use a dedicated forwarding alias rather than a personal inbox — a plus-style
+alias is not protection, since spammers strip the `+tag` suffix to recover the real
+address. A separate account that forwards to the main one is the version that works.
 
 ## Motion
 
