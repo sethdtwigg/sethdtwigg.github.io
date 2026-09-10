@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Seth Twigg — Senior Backend Engineer</title>
+<meta name="description" content="Senior backend engineer and technical lead with 12+ years building secure enterprise software, search infrastructure, and integrated systems for law enforcement agencies. C#, .NET, C++, Python.">
+<link rel="canonical" href="https://sethdtwigg.github.io/">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0e0e11">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Seth Twigg — Senior Backend Engineer">
+<meta property="og:description" content="12+ years building secure enterprise software, search infrastructure, and integrated systems for law enforcement agencies.">
+<meta property="og:url" content="https://sethdtwigg.github.io/">
+<meta property="og:image" content="https://sethdtwigg.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seth Twigg — Senior Backend Engineer">
+<meta name="twitter:description" content="12+ years building secure enterprise software, search infrastructure, and integrated systems for law enforcement agencies.">
+<meta name="twitter:image" content="https://sethdtwigg.github.io/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preload" href="fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Seth Twigg",
+  "url": "https://sethdtwigg.github.io/",
+  "jobTitle": "Senior Backend Engineer",
+  "description": "Senior backend engineer and technical lead with 12+ years building secure enterprise software, search infrastructure, and integrated hardware/software systems for law enforcement agencies.",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Bob Jones University"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "DataWorks Plus"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "SC",
+    "addressCountry": "US"
+  },
+  "knowsAbout": [
+    "Backend Architecture",
+    "Distributed Systems",
+    "Search and Indexing",
+    "C#",
+    ".NET",
+    "C++",
+    "Python",
+    "SQL",
+    "CI/CD",
+    "Technical Leadership"
+  ],
+  "sameAs": ["https://github.com/sethdtwigg"]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="sitenav" aria-label="Sections">
+  <a class="sitenav__brand" href="#top">ST</a>
+  <ul class="sitenav__list">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#open-source">Open source</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="shell">
+    <p class="hero__eyebrow">Greenville&ndash;Spartanburg, SC</p>
+    <h1 class="hero__name">Seth Twigg</h1>
+    <p class="hero__role">Senior Backend Engineer <span aria-hidden="true">&middot;</span> Technical Lead</p>
+    <div class="hero__lede">
+      <p>I build secure enterprise software for law enforcement agencies across the United States
+      and internationally &mdash; backend systems, search infrastructure, and integrated
+      hardware/software platforms where reliability is not negotiable.</p>
+      <p>Twelve years in, my work keeps landing on the parts that decide whether a system is
+      actually usable: making a record lookup return in seconds instead of minutes, replacing a
+      two-day manual release with a pipeline, rebuilding hot paths in C++ so they fit the hardware
+      an agency actually has. More recently that has extended to working out where AI genuinely
+      helps in a security-sensitive environment &mdash; and where it does not.</p>
+    </div>
+    <p class="hero__meta">
+      <a class="link-arrow" href="https://github.com/sethdtwigg" rel="me noopener">
+        github.com/sethdtwigg <span class="link-arrow__mark" aria-hidden="true">&rarr;</span>
+      </a>
+    </p>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== SELECTED WORK ===================== -->
+  <section class="section" id="work" aria-labelledby="work-h">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="section__label">01</p>
+        <h2 class="section__title" id="work-h">Selected work</h2>
+        <p class="section__note">Professional and client engagements. Most of this code is
+        proprietary and not publicly linkable, so each entry is described by problem, approach,
+        and measured outcome.</p>
+      </div>
+
+      <div class="cards reveal-group">
+        <!--
+          PROJECT CARD TEMPLATE — copy this block to add a new entry.
+          <article class="card reveal">
+            <header class="card__head">
+              <h3 class="card__title">Title</h3>
+              <p class="card__org">Org</p>
+            </header>
+            <p class="card__body">What the problem was and what you built.</p>
+            <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Measured result.</p>
+            <ul class="tags"><li>Tech</li></ul>
+          </article>
+        -->
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">Google-style search over a legacy records system</h3>
+            <p class="card__org">DataWorks Plus</p>
+          </header>
+          <p class="card__body">The primary lookup screen was a form with hundreds of fields, and
+          finding a single record took several minutes of an officer&rsquo;s time. I built a
+          Lucene-backed search experience to replace it with a single query box.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Typical record
+          lookup dropped from several minutes to seconds, and it became the primary search path for
+          agency users.</p>
+          <ul class="tags"><li>Lucene</li><li>C#</li><li>.NET</li><li>SQL Server</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">The company&rsquo;s first CI/CD pipeline</h3>
+            <p class="card__org">DataWorks Plus</p>
+          </header>
+          <p class="card__body">Build and release was fully manual and took roughly two days.
+          I designed and implemented the first Azure DevOps CI pipeline, then automated deployment
+          to a dedicated validation machine with post-deployment testing so installation defects
+          surfaced before release rather than in the field.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Build-and-release
+          time fell from about two days to under two hours; production hotfixes dropped by
+          approximately 40%.</p>
+          <ul class="tags"><li>Azure DevOps</li><li>Release engineering</li><li>Automated testing</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">Company-wide AI evaluation and usage standards</h3>
+            <p class="card__org">DataWorks Plus</p>
+          </header>
+          <p class="card__body">I led the initiative to research and evaluate AI technologies for a
+          security-sensitive environment, assessing open-source and LLM-based tooling against
+          security, maintainability, and cost criteria &mdash; and produced the approved guidelines
+          that let engineering teams adopt it without a compliance exception.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Selecting
+          self-hosted options avoided approximately $50K in annual licensing per customer while
+          keeping sensitive data in-house. Adopted tooling cut routine development tasks by roughly
+          30% and established the company&rsquo;s first AI usage standards.</p>
+          <ul class="tags"><li>LLM evaluation</li><li>Self-hosted inference</li><li>Technical strategy</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">Performance rebuild of hot-path modules</h3>
+            <p class="card__org">DataWorks Plus</p>
+          </header>
+          <p class="card__body">High-volume operations were straining the constrained hardware
+          agencies actually run on. I rebuilt the performance-critical modules in C and C++,
+          targeting both processing time and memory footprint.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Processing time on
+          high-volume operations fell by approximately 50%, with a lower memory footprint on the
+          same hardware.</p>
+          <ul class="tags"><li>C</li><li>C++</li><li>Profiling</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">Tariff data extraction tool</h3>
+            <p class="card__org">WiseTech Global</p>
+          </header>
+          <p class="card__body">Product managers were hand-transcribing tariff data out of PDF
+          documents to keep CargoWise current. I built an OCR-based tool to extract and parse that
+          data automatically.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Preparing a tariff
+          update went from roughly a full day to under an hour.</p>
+          <ul class="tags"><li>Python</li><li>OCR</li><li>PDF parsing</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">Child &amp; youth check-out system</h3>
+            <p class="card__org">Trinity Bible Church</p>
+          </header>
+          <p class="card__body">Child pickup ran on paper sign-out sheets, which made verification
+          slow and error-prone. I built a secure, web API&ndash;driven application to track and
+          verify child and teen check-outs.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Replaced the paper
+          process for roughly 100 weekly check-outs and eliminated manual matching errors.</p>
+          <ul class="tags"><li>Dart</li><li>Flutter</li><li>REST API</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <header class="card__head">
+            <h3 class="card__title">Resident outreach automation</h3>
+            <p class="card__org">Shadow Ridge Baptist Church</p>
+          </header>
+          <p class="card__body">A secure automation system that processes new-resident information
+          and generates the outreach materials from it &mdash; contact lists, personalized
+          postcards, and QR codes &mdash; end to end.</p>
+          <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Turned a multi-day
+          manual effort into a same-day mailing, making consistent monthly outreach practical.</p>
+          <ul class="tags"><li>C#</li><li>VBA</li><li>Document generation</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPEN SOURCE ===================== -->
+  <section class="section" id="open-source" aria-labelledby="os-h">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="section__label">02</p>
+        <h2 class="section__title" id="os-h">Open source</h2>
+        <p class="section__note">Public repositories. VerseLink is the same idea &mdash; replace a
+        Bible verse reference with its full text, wherever you happen to be typing &mdash; solved
+        three times against three very different platform constraints.</p>
+      </div>
+
+      <div class="cards cards--repo reveal-group">
+        <article class="card card--repo reveal">
+          <header class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/sethdtwigg/VerseLinkWindows" rel="noopener">VerseLink for Windows</a>
+            </h3>
+            <p class="card__org">C++</p>
+          </header>
+          <p class="card__body">A background application that installs a global hotkey and replaces
+          verse references with full verse text in whatever window has focus.</p>
+          <ul class="tags"><li>C++</li><li>Win32</li><li>Global hotkeys</li></ul>
+        </article>
+
+        <article class="card card--repo reveal">
+          <header class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/sethdtwigg/VerseLinkAndroid" rel="noopener">VerseLink for Android</a>
+            </h3>
+            <p class="card__org">Kotlin</p>
+          </header>
+          <p class="card__body">The same capability as a secondary keyboard &mdash; a custom input
+          method that expands references inline in any app on the device.</p>
+          <ul class="tags"><li>Kotlin</li><li>Android IME</li></ul>
+        </article>
+
+        <article class="card card--repo reveal">
+          <header class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/sethdtwigg/PowerToys-Run-VerseLink" rel="noopener">PowerToys Run &mdash; VerseLink</a>
+            </h3>
+            <p class="card__org">C#</p>
+          </header>
+          <p class="card__body">A PowerToys Run plugin that types verse text as though it came from
+          the keyboard, so it works in applications that reject pasted input.</p>
+          <ul class="tags"><li>C#</li><li>Plugin architecture</li></ul>
+        </article>
+
+        <article class="card card--repo reveal">
+          <header class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/sethdtwigg/treeology-daily" rel="noopener">Treeology Daily</a>
+            </h3>
+            <p class="card__org">Progressive Web App</p>
+          </header>
+          <p class="card__body">An installable, fully offline PWA for daily catechism review &mdash;
+          91 questions, configurable pacing, quiz and reading modes, service-worker caching, and
+          export/import of progress between devices.</p>
+          <ul class="tags"><li>JavaScript</li><li>Service workers</li><li>Offline-first</li></ul>
+        </article>
+
+        <article class="card card--repo reveal">
+          <header class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/sethdtwigg/aoe2-traitor" rel="noopener">AoE2 Traitor</a>
+            </h3>
+            <p class="card__org">Single-file web app</p>
+          </header>
+          <p class="card__body">A zero-backend party tool for Age of Empires II that assigns teams
+          and secret traitors, keeping all shared state in the URL hash so there is no server to run.</p>
+          <ul class="tags"><li>JavaScript</li><li>URL-hash state</li></ul>
+        </article>
+
+        <article class="card card--repo reveal">
+          <header class="card__head">
+            <h3 class="card__title">
+              <a href="https://github.com/sethdtwigg/event_pulse" rel="noopener">Event Pulse</a>
+            </h3>
+            <p class="card__org">Dart / Flutter</p>
+          </header>
+          <p class="card__body">A small Flutter client that polls the Planning Center API for the
+          most recent check-outs of an event.</p>
+          <ul class="tags"><li>Dart</li><li>Flutter</li><li>REST</li></ul>
+        </article>
+      </div>
+
+      <div class="private reveal">
+        <h3 class="private__title">Also built</h3>
+        <p class="private__note">Private repositories &mdash; described here rather than linked,
+        because the source is not public.</p>
+        <ul class="private__list">
+          <li>
+            <span class="private__name">face_search</span>
+            <span class="private__tech">C# &middot; OpenCV</span>
+          </li>
+          <li>
+            <span class="private__name">finance_dashboard</span>
+            <span class="private__tech">TypeScript</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="section__label">03</p>
+        <h2 class="section__title" id="exp-h">Experience</h2>
+      </div>
+
+      <ol class="timeline reveal-group">
+        <li class="role reveal">
+          <p class="role__date">2022 &mdash; Present</p>
+          <div class="role__body">
+            <h3 class="role__title">Senior Software Developer / Technical Lead</h3>
+            <p class="role__org">DataWorks Plus <span aria-hidden="true">&middot;</span> Greenville, SC</p>
+            <p class="role__desc">Lead the design, development, and delivery of secure enterprise
+            software and integrated hardware/software solutions used by law enforcement agencies
+            nationally and internationally, including LAPD, NYPD, and Michigan State Police.
+            Mentor developers and support engineers, and partner with product, sales, and support
+            through pre-sales and delivery.</p>
+          </div>
+        </li>
+
+        <li class="role reveal">
+          <p class="role__date">2021 &mdash; 2022</p>
+          <div class="role__body">
+            <h3 class="role__title">Technical Writer</h3>
+            <p class="role__org">Code Maze <span aria-hidden="true">&middot;</span> Remote</p>
+            <p class="role__desc">Authored technical articles and runnable sample code on C#, .NET,
+            and software development practices for an audience of approximately 300,000 monthly
+            readers, working through a structured editorial workflow in GitHub and JIRA.</p>
+          </div>
+        </li>
+
+        <li class="role reveal">
+          <p class="role__date">2016 &mdash; 2021</p>
+          <div class="role__body">
+            <h3 class="role__title">Software Developer</h3>
+            <p class="role__org">DataWorks Plus <span aria-hidden="true">&middot;</span> Greenville, SC</p>
+            <p class="role__desc">Built and maintained enterprise software in C#, VB.NET,
+            JavaScript, SQL Server, C++, and Python, delivering features used daily by agencies
+            nationwide. Contributed to architecture discussions, code reviews, and production
+            troubleshooting.</p>
+          </div>
+        </li>
+
+        <li class="role reveal">
+          <p class="role__date">2014 &mdash; 2016</p>
+          <div class="role__body">
+            <h3 class="role__title">Technical Support Engineer</h3>
+            <p class="role__org">DataWorks Plus <span aria-hidden="true">&middot;</span> Greenville, SC</p>
+            <p class="role__desc">Provided Tier-2 support for enterprise software deployed to law
+            enforcement agencies, keeping mission-critical systems within required uptime targets,
+            and automated system imaging and recurring maintenance with Python and Batch scripting.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <div class="shell">
+      <div class="section__head reveal">
+        <p class="section__label">04</p>
+        <h2 class="section__title" id="skills-h">Skills</h2>
+      </div>
+
+      <dl class="skills reveal-group">
+        <div class="skills__group reveal">
+          <dt>Backend engineering</dt>
+          <dd>Backend architecture &middot; Distributed systems &middot; REST APIs &middot; System
+          integration &middot; Data processing &middot; Search &amp; indexing &middot; Performance
+          optimization &middot; Security-focused development</dd>
+        </div>
+        <div class="skills__group reveal">
+          <dt>AI &amp; modernization</dt>
+          <dd>AI technology evaluation &middot; Enterprise AI adoption &middot; LLM evaluation
+          &middot; CI/CD pipeline design &middot; Automated testing &middot; Deployment automation
+          &middot; Release engineering &middot; Technical strategy</dd>
+        </div>
+        <div class="skills__group reveal">
+          <dt>Languages &amp; tools</dt>
+          <dd>C# &middot; .NET &middot; VB.NET &middot; C++ &middot; C &middot; Python &middot;
+          JavaScript &middot; SQL &middot; Dart &middot; Flutter &middot; Kotlin &middot; Lucene
+          &middot; Azure DevOps &middot; Git &middot; JIRA</dd>
+        </div>
+        <div class="skills__group reveal">
+          <dt>Leadership</dt>
+          <dd>Technical leadership &middot; Cross-functional collaboration &middot; Engineering
+          mentorship &middot; Requirements analysis &middot; Technical documentation &middot;
+          Stakeholder communication &middot; Solution design</dd>
+        </div>
+      </dl>
+
+      <div class="education reveal">
+        <h3 class="education__title">Education</h3>
+        <ul class="education__list">
+          <li>
+            <span class="education__degree">Master of Arts</span>
+            <span class="education__school">Bob Jones University</span>
+            <span class="education__year">2018</span>
+          </li>
+          <li>
+            <span class="education__degree">B.S., Computer Science</span>
+            <span class="education__school">Bob Jones University</span>
+            <span class="education__year">2015</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section section--contact" id="contact" aria-labelledby="contact-h">
+    <div class="shell">
+      <div class="contact reveal">
+        <p class="section__label">05</p>
+        <h2 class="section__title" id="contact-h">Get in touch</h2>
+        <p class="contact__note">The best place to find me and my code is GitHub.</p>
+        <!--
+          CONTACT ADDRESS — intentionally omitted for now.
+          To add one later, uncomment the block below and replace the placeholder.
+          Use a dedicated forwarding alias, not a personal inbox: a plus-style alias
+          is trivially stripped back to the real address by spammers. See README.md.
+
+          <p class="contact__email">
+            <a class="link-arrow link-arrow--lg" href="mailto:REPLACE-WITH-ALIAS">
+              REPLACE-WITH-ALIAS <span class="link-arrow__mark" aria-hidden="true">&rarr;</span>
+            </a>
+          </p>
+        -->
+        <p class="contact__links">
+          <a class="link-arrow link-arrow--lg" href="https://github.com/sethdtwigg" rel="me noopener">
+            github.com/sethdtwigg <span class="link-arrow__mark" aria-hidden="true">&rarr;</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__inner">
+    <p class="footer__name">Seth Twigg</p>
+    <p class="footer__loc">Greenville&ndash;Spartanburg, SC</p>
+  </div>
+</footer>
+
+</body>
+</html>
