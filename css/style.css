@@ -58,9 +58,15 @@
     --fg-muted:  #a9a59d;   /* ~7.8:1  */
     --fg-faint:  #86827b;   /* ~5.1:1  */
 
-    --accent:      #e8a24a;
+    /* From the twig mark's reversed variant, which is the one drawn for dark
+       grounds. The logo's other two greens are unusable as text here:
+       #4E8368 measures 4.38:1 against --bg and #1B3A2F 1.55:1. */
+    --accent:      #7FB79A;   /* 8.39:1 on --bg */
     --accent-soft: color-mix(in srgb, var(--accent) 18%, transparent);
     --accent-line: color-mix(in srgb, var(--accent) 40%, transparent);
+
+    /* Light ink of the mark — pairs with --accent for the two-tone twig. */
+    --mark-ink:    #EDF2EA;
 
     --font-display: 'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
     --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -119,7 +125,7 @@
     pointer-events: none;
     background:
       radial-gradient(60% 55% at 18% 0%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 70%),
-      radial-gradient(45% 45% at 88% 8%, color-mix(in srgb, #6b7fd7 7%, transparent), transparent 72%);
+      radial-gradient(45% 45% at 88% 8%, color-mix(in srgb, #2f6b57 9%, transparent), transparent 72%);
   }
 
   h1, h2, h3 {
@@ -160,7 +166,7 @@
     z-index: 100;
     padding: 0.7rem 1.2rem;
     background: var(--accent);
-    color: #17130b;
+    color: #0e0e11;
     font-weight: 600;
     text-decoration: none;
     border-radius: 0 0 var(--radius) var(--radius);
@@ -239,12 +245,40 @@
   }
 
   .sitenav__brand {
-    font-family: var(--font-display);
-    font-size: 1.35rem;
-    letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
-    color: var(--fg);
+    color: var(--mark-ink);
     flex-shrink: 0;
+    border-radius: 4px;
+    transition: color 0.22s var(--ease);
+  }
+
+  .sitenav__brand:hover { color: var(--fg); }
+
+  .sitenav__brand .mark { height: 26px; }
+
+  /* The twig mark. Light strokes take currentColor so the mark tracks the
+     surrounding text color; the lower branch and its bud carry the accent. */
+  .mark {
+    display: block;
+    width: auto;
+    overflow: visible;
+  }
+
+  .mark__stem,
+  .mark__branch { stroke: currentColor; }
+
+  .mark__bud { fill: currentColor; }
+
+  .mark__branch--accent { stroke: var(--accent); }
+
+  .mark__bud--accent { fill: var(--accent); }
+
+  .hero__mark {
+    height: clamp(52px, 44px + 2.2vw, 72px);
+    color: var(--mark-ink);
+    margin-block-end: clamp(1.75rem, 1.4rem + 1.4vw, 2.5rem);
   }
 
   .sitenav__list {
