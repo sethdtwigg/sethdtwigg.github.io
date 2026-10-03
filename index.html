@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Seth Twigg — Senior Backend Engineer</title>
-<meta name="description" content="Senior backend engineer and technical lead. 12+ years building secure enterprise software for law enforcement agencies, mostly in C#, .NET and C++. Search, performance work and CI/CD.">
+<meta name="description" content="Senior backend engineer and technical lead with 12+ years building secure enterprise software for law enforcement agencies, mostly in C#, .NET, and C++, with a focus on search, performance, and release automation.">
 <link rel="canonical" href="https://sethdtwigg.github.io/">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0e0e11">
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Seth Twigg — Senior Backend Engineer">
-<meta property="og:description" content="12+ years building secure enterprise software for law enforcement agencies. Search, performance work and release automation.">
+<meta property="og:description" content="12+ years building secure enterprise software for law enforcement agencies, with a focus on search, performance, and release automation.">
 <meta property="og:url" content="https://sethdtwigg.github.io/">
 <meta property="og:image" content="https://sethdtwigg.github.io/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Seth Twigg — Senior Backend Engineer">
-<meta name="twitter:description" content="12+ years building secure enterprise software for law enforcement agencies. Search, performance work and release automation.">
+<meta name="twitter:description" content="12+ years building secure enterprise software for law enforcement agencies, with a focus on search, performance, and release automation.">
 <meta name="twitter:image" content="https://sethdtwigg.github.io/assets/og-image.png">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -36,7 +36,7 @@
   "name": "Seth Twigg",
   "url": "https://sethdtwigg.github.io/",
   "jobTitle": "Senior Backend Engineer",
-  "description": "Senior backend engineer and technical lead. 12+ years building secure enterprise software and integrated hardware/software systems for law enforcement agencies in the US and abroad.",
+  "description": "Senior backend engineer and technical lead with 12+ years building secure enterprise software and the integrated hardware/software systems it runs on, for law enforcement agencies in the United States and abroad.",
   "alumniOf": {
     "@type": "CollegeOrUniversity",
     "name": "Bob Jones University"
@@ -106,14 +106,16 @@
     <h1 class="hero__name">Seth Twigg</h1>
     <p class="hero__role">Senior Backend Engineer <span aria-hidden="true">&middot;</span> Technical Lead</p>
     <div class="hero__lede">
-      <p>I build secure enterprise software for law enforcement agencies in the US and abroad.
-      Backend systems, search, and the integrated hardware and software they run on. People rely on
-      these during a shift, which sets the bar for how carefully they get built.</p>
-      <p>Twelve years in, most of my work comes down to whether a system holds up in use. A record
-      lookup that returns in seconds instead of minutes, or a two-day manual release replaced by a
-      pipeline. Sometimes it means rebuilding hot paths in C++ so they fit the hardware an agency
-      already owns. Lately I have spent a lot of that time on AI, working out where it helps inside
-      a security-sensitive environment and where it gets in the way.</p>
+      <p>I build secure enterprise software for law enforcement agencies in the United States and
+      abroad, which covers backend systems, search, and the integrated hardware and software those
+      systems run on. Officers rely on all of it in the middle of a shift, and that reality sets
+      the standard for how carefully it has to be built.</p>
+      <p>Twelve years in, most of my work comes down to whether a system holds up once people
+      depend on it. In practice that has meant getting a record lookup to return in seconds rather
+      than minutes, replacing a two-day manual release with a pipeline, and rebuilding hot paths in
+      C++ so they fit the hardware an agency already owns. More recently I have spent a good deal of
+      that time on AI, working through where it helps inside a security-sensitive environment and
+      where it only gets in the way.</p>
     </div>
     <p class="hero__meta">
       <a class="link-arrow" href="https://github.com/sethdtwigg" rel="me noopener">
@@ -132,8 +134,8 @@
         <p class="section__label">01</p>
         <h2 class="section__title" id="work-h">Selected work</h2>
         <p class="section__note">Work done for employers and clients. Most of this code is
-        proprietary, so there is nothing to link to. Each entry below says what the problem was and
-        what changed once I had built something for it.</p>
+        proprietary, so there is nothing for me to link to. What I have done instead is describe
+        each one by the problem that prompted it and what changed once it was in place.</p>
       </div>
 
       <div class="cards reveal-group">
@@ -155,12 +157,12 @@
             <h3 class="card__title">Google-style search over a legacy records system</h3>
             <p class="card__org">DataWorks Plus</p>
           </header>
-          <p class="card__body">The main lookup screen was a form with hundreds of fields. Finding
-          one record took several minutes of an officer&rsquo;s time. I built a Lucene-backed search
-          to replace the whole thing with a single query box.</p>
+          <p class="card__body">The main lookup screen was a form with hundreds of fields, and
+          finding a single record took several minutes of an officer&rsquo;s time. I built a
+          Lucene-backed search to replace all of that with one query box.</p>
           <p class="card__outcome"><span class="card__outcome-key">Outcome</span> A typical record
-          lookup went from several minutes to seconds, and it became the search path agency users
-          reach for first.</p>
+          lookup went from several minutes down to seconds, and it became the search path agency
+          users reach for first.</p>
           <ul class="tags"><li>Lucene</li><li>C#</li><li>.NET</li><li>SQL Server</li></ul>
         </article>
 
@@ -186,7 +188,7 @@
           </header>
           <p class="card__body">I helped lead the initiative to research and evaluate AI
           technologies for a security-sensitive environment, assessing open-source and LLM-based
-          tooling against security, maintainability and cost criteria. I then produced the approved
+          tooling against security, maintainability, and cost criteria. I then produced the approved
           guidelines that let engineering teams adopt it without a compliance exception.</p>
           <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Adopted tooling
           cut routine development tasks by roughly 30% and established the company&rsquo;s first AI
@@ -200,9 +202,9 @@
             <p class="card__org">DataWorks Plus</p>
           </header>
           <p class="card__body">High-volume operations were straining the hardware agencies run in
-          the field, which is older and tighter on memory than a developer machine. I rebuilt the
-          performance-critical modules in C and C++, going after processing time and memory
-          footprint together.</p>
+          the field, which is older and far tighter on memory than anything a developer works on
+          day to day. I rebuilt the performance-critical modules in C and C++, going after
+          processing time and memory footprint together rather than trading one for the other.</p>
           <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Processing time on
           high-volume operations fell by approximately 50%, with a smaller memory footprint on the
           same hardware.</p>
@@ -215,8 +217,8 @@
             <p class="card__org">WiseTech Global</p>
           </header>
           <p class="card__body">Product managers were hand-transcribing tariff data out of PDFs to
-          keep CargoWise current. It was slow and easy to get wrong. I built an OCR tool that pulls
-          the data out and parses it on its own.</p>
+          keep CargoWise current, which was both slow and easy to get wrong. I built an OCR tool
+          that pulls the data out and parses it without anyone having to retype it.</p>
           <p class="card__outcome"><span class="card__outcome-key">Outcome</span> Preparing a tariff
           update went from roughly a full day to under an hour.</p>
           <ul class="tags"><li>Python</li><li>OCR</li><li>PDF parsing</li></ul>
@@ -242,9 +244,10 @@
           </header>
           <p class="card__body">A secure automation system that takes in new-resident information
           and produces the outreach materials from it end to end, including contact lists,
-          personalized postcards and QR codes.</p>
+          personalized postcards, and QR codes.</p>
           <p class="card__outcome"><span class="card__outcome-key">Outcome</span> A multi-day manual
-          effort became a same-day mailing, which is what made monthly outreach practical.</p>
+          effort became a same-day mailing, which is what made consistent monthly outreach
+          practical to sustain.</p>
           <ul class="tags"><li>C#</li><li>VBA</li><li>Document generation</li></ul>
         </article>
       </div>
@@ -257,10 +260,10 @@
       <div class="section__head reveal">
         <p class="section__label">02</p>
         <h2 class="section__title" id="os-h">Open source</h2>
-        <p class="section__note">Public repositories. VerseLink is one idea solved three times. You
-        type a Bible verse reference, it becomes the full verse text, wherever you happen to be
-        typing. Each platform fights you differently, so each version works differently
-        underneath.</p>
+        <p class="section__note">Public repositories. VerseLink is one idea solved three times
+        over: you type a Bible verse reference and it becomes the full verse text, wherever you
+        happen to be typing. Each platform constrains that differently, so while the idea is the
+        same in all three, the version underneath is not.</p>
       </div>
 
       <div class="cards cards--repo reveal-group">
@@ -271,8 +274,9 @@
             </h3>
             <p class="card__org">C++</p>
           </header>
-          <p class="card__body">Runs in the background on a global hotkey. Press it and the verse
-          reference under your cursor becomes the full text, in whatever window has focus.</p>
+          <p class="card__body">Runs quietly in the background on a global hotkey, so that pressing
+          it replaces the verse reference under your cursor with the full text, in whatever window
+          happens to have focus.</p>
           <ul class="tags"><li>C++</li><li>Win32</li><li>Global hotkeys</li></ul>
         </article>
 
@@ -283,8 +287,8 @@
             </h3>
             <p class="card__org">Kotlin</p>
           </header>
-          <p class="card__body">The same thing as a secondary keyboard. A custom input method that
-          expands references inline in any app on the phone.</p>
+          <p class="card__body">The same idea delivered as a secondary keyboard, using a custom
+          input method that expands references inline in any app on the phone.</p>
           <ul class="tags"><li>Kotlin</li><li>Android IME</li></ul>
         </article>
 
@@ -295,8 +299,9 @@
             </h3>
             <p class="card__org">C#</p>
           </header>
-          <p class="card__body">A PowerToys Run plugin. It types the verse text out as if it came
-          from the keyboard, so it still works in applications that refuse pasted input.</p>
+          <p class="card__body">A PowerToys Run plugin that types the verse text out as though it
+          came from the keyboard, which means it still works in applications that refuse pasted
+          input.</p>
           <ul class="tags"><li>C#</li><li>Plugin architecture</li></ul>
         </article>
 
@@ -307,9 +312,10 @@
             </h3>
             <p class="card__org">Progressive Web App</p>
           </header>
-          <p class="card__body">An installable PWA for daily catechism review, 91 questions in all.
-          It runs fully offline behind a service worker, has quiz and reading modes, lets you set
-          your own pace, and exports progress so you can move it to another device.</p>
+          <p class="card__body">An installable PWA for daily catechism review, covering all 91
+          questions. It runs fully offline behind a service worker, offers both quiz and reading
+          modes, lets you set your own pace, and exports your progress so you can carry it over to
+          another device.</p>
           <ul class="tags"><li>JavaScript</li><li>Service workers</li><li>Offline-first</li></ul>
         </article>
 
@@ -320,9 +326,9 @@
             </h3>
             <p class="card__org">Single-file web app</p>
           </header>
-          <p class="card__body">A party tool for Age of Empires II that assigns teams and secret
-          traitors. All the shared state lives in the URL hash, so there is no backend and nothing
-          to run. Built it for 4v4 nights on Discord.</p>
+          <p class="card__body">A party tool for Age of Empires II that randomly assigns teams and
+          secret traitors. All of the shared state lives in the URL hash, so there is no backend to
+          run and nothing to host. I built it for 4v4 nights on Discord.</p>
           <ul class="tags"><li>JavaScript</li><li>URL-hash state</li></ul>
         </article>
 
@@ -342,7 +348,7 @@
       <div class="private reveal">
         <h3 class="private__title">Also built</h3>
         <p class="private__note">These repositories are private, so there is nothing to link to.
-        Listed here for completeness.</p>
+        I have listed them here for completeness.</p>
         <ul class="private__list">
           <li>
             <span class="private__name">face_search</span>
@@ -371,11 +377,11 @@
           <div class="role__body">
             <h3 class="role__title">Senior Software Developer / Technical Lead</h3>
             <p class="role__org">DataWorks Plus <span aria-hidden="true">&middot;</span> Greenville, SC</p>
-            <p class="role__desc">I lead design and delivery of secure enterprise software and the
-            integrated hardware and software that runs it, used by agencies including LAPD, NYPD
-            and Michigan State Police. I mentor developers and support engineers. I also sit with
-            product, sales and support through pre-sales and delivery, which is usually where the
-            requirements get settled.</p>
+            <p class="role__desc">I lead the design and delivery of secure enterprise software,
+            along with the integrated hardware and software it runs on, for agencies that include
+            LAPD, NYPD, and Michigan State Police. Alongside that I mentor developers and support
+            engineers, and I sit with product, sales, and support through pre-sales and delivery,
+            which is usually where the requirements get settled.</p>
           </div>
         </li>
 
@@ -384,9 +390,11 @@
           <div class="role__body">
             <h3 class="role__title">Technical Writer</h3>
             <p class="role__org">Code Maze <span aria-hidden="true">&middot;</span> Remote</p>
-            <p class="role__desc">Wrote technical articles and runnable sample code on C#, .NET and
-            general development practice, for an audience of approximately 300,000 monthly readers.
-            Everything went through a structured editorial workflow in GitHub and JIRA.</p>
+            <p class="role__desc">I wrote technical articles and runnable sample code on C#, .NET,
+            and general development practice for an audience of approximately 300,000 monthly
+            readers. Every piece went through a structured editorial workflow in GitHub and JIRA,
+            which is where I learned how much the editing matters to whether an explanation
+            lands.</p>
           </div>
         </li>
 
@@ -395,10 +403,10 @@
           <div class="role__body">
             <h3 class="role__title">Software Developer</h3>
             <p class="role__org">DataWorks Plus <span aria-hidden="true">&middot;</span> Greenville, SC</p>
-            <p class="role__desc">Built and maintained enterprise software in C#, VB.NET,
-            JavaScript, SQL Server, C++ and Python. The features shipped to agencies nationwide and
-            got used every day. I was in the architecture discussions and code reviews, and on the
-            other end of production troubleshooting when something broke.</p>
+            <p class="role__desc">I built and maintained enterprise software in C#, VB.NET,
+            JavaScript, SQL Server, C++, and Python, shipping features that agencies nationwide
+            used every day. I took part in the architecture discussions and code reviews, and I was
+            on the other end of production troubleshooting whenever something broke.</p>
           </div>
         </li>
 
@@ -407,10 +415,11 @@
           <div class="role__body">
             <h3 class="role__title">Technical Support Engineer</h3>
             <p class="role__org">DataWorks Plus <span aria-hidden="true">&middot;</span> Greenville, SC</p>
-            <p class="role__desc">Tier-2 support for enterprise software already deployed to law
-            enforcement agencies. These systems have uptime targets they have to stay inside, so
-            the work was equal parts diagnosis and speed. I automated system imaging and the
-            recurring maintenance with Python and Batch scripting.</p>
+            <p class="role__desc">I provided Tier-2 support for enterprise software already
+            deployed to law enforcement agencies. These systems carry uptime targets they have to
+            stay inside, so the work was equal parts careful diagnosis and speed. In addition, I
+            automated system imaging and the recurring maintenance with Python and Batch
+            scripting.</p>
           </div>
         </li>
       </ol>
